@@ -1,0 +1,1 @@
+Ejercicios de UML(diagrama de clases) y clases en python. Este proyecto está compuesto por 3 módulos de python correspondiendo a cada uno de los apartados del ejercicio.

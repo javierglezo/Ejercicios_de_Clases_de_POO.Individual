@@ -1,0 +1,12 @@
+--Start log--
+Primera llamada
+2ª llamada
+3ª llamada
+4ª llamada
+5ª llamada
+--Start log--
+Primera llamada
+2ª llamada
+3ª llamada
+4ª llamada
+5ª llamada
