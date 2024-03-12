@@ -1,41 +1,41 @@
-class A: 
-    def z(self): 
+class Zapato: 
+    def metodo_1(self): 
         return self
      
     #Devuelve la longitud
-    def y(self, t): 
+    def metodo_2(self, t): 
         return len(t) 
 
 
-#Asignar clase 'A' a la variable 'a' (a=clase de tipo 'A') 
-a = A 
+#Asignar clase 'Zapato' a la variable 'zapato' (zapato=clase de tipo 'Zapato') 
+zapato = Zapato 
 """
-Comprobar que a es clase con metodo type(): 
+Comprobar que zapato es clase con metodo type(): 
 """
-print(type(a))
+print(type(zapato))
 
-#Asigna metodo z de clase 'a' a la variable 'y' (asigna clase 'A')
-y = a.z 
-#Devuelve que 'y' es la clase 'A' (<class '__main__.A'>)
-print(y(a)) 
+#Asigna metodo 'metodo_1' de clase 'zapato' a la variable 'y' (asigna clase 'Zapato')
+y = zapato.metodo_1 
+#Devuelve que 'y' es la clase 'Zapato' (<class '__main__.Zapato'>)
+print(y(zapato)) 
 
-#Crear objeto de la clase 'A' y se lo asigno a la variable 'aa'
-aa = a()
-#Verificar si 'aa' y 'a()' son del mismo tipo
+#Crear objeto de la clase 'Zapato' y se lo asigno a la variable 'nike'
+nike = zapato()
+#Verificar si 'nike' y 'zapato()' son del mismo tipo
 """
-Es falso ya que a() es el constructor y aa es el objeto creado
+Es falso ya que zapato() es el constructor y nike es el objeto creado
 """ 
-print(aa is a()) 
+print(nike is zapato()) 
 
-#Del objeto 'aa', asigno el metodo 'y' a 'z'
-z = aa.y 
-#Devuelve '0' ya que z no tiene longitud
-print(z(())) 
-#Crea otro objeto de tipo A, llama al metodo 'y' con parametro la tupla (a,) devolviendo '1'
-print(a().y((a,))) 
+#Del objeto 'nike', asigno el metodo 'metodo_2' a 'count_nike'
+count_nike = nike.metodo_2 
+#Devuelve '0' ya que count_nike no tiene longitud
+print(count_nike(())) 
+#Crea otro objeto de tipo Zapato, llama al metodo 'metodo_2' con parametro la tupla (zapato,) devolviendo '1'
+print(zapato().metodo_2((zapato,))) 
 
-#Llamo  al metodo 'y' de la clase 'A', pasandole los parametros 'aa' (objeto) y la tupla '(a,z)', devolviendo la longitud de '(a,z)' que es '2'
-print(A.y(aa, (a,z))) 
+#Llamo  al metodo 'metodo_2' de la clase 'Zapato', pasandole los parametros 'nike' (objeto) y la tupla '(nike,count_nike)', devolviendo la longitud de '(nike,count_nike)' que es '2'
+print(Zapato.metodo_2(nike, (zapato,count_nike))) 
 
-#Llamo al metodo 'y' del objeto 'aa' y le paso la tupla '(z,1,'z')', devolviendo longitud '3'
-print(aa.y((z,1,'z'))) 
+#Llamo al metodo 'metodo_2' del objeto 'nike' y le paso la tupla '(count_nike,1,'z')', devolviendo longitud '3'
+print(nike.metodo_2((count_nike,1,'z'))) 
